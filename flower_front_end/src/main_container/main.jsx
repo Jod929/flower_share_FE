@@ -4,29 +4,29 @@ import Buttons from './buttons/buttons.jsx';
 import Friends from '../friends/friends.jsx';
 import General from '../general/general.jsx';
 import Profile from '../profile/profile.jsx';
+import AddPost from '../components/make_post/add_post/addPost.jsx'
 
 
 const Main = () => {
 
   const [ page, changePage ] = useState(<General/>);
 
-
   const updatePage = (pageName) => {
 
     if (pageName === "friends") {
-      changePage(<Friends/>);
+      changePage(<Friends updatePage={updatePage}/>);
     } else if (pageName === "profile") {
       changePage(<Profile/>);
+    } else if (pageName === "post") {
+      changePage(<AddPost updatePage={updatePage}/>);
     } else {
-      changePage(<General/>);
+      changePage(<General updatePage={updatePage}/>);
     }
 
   }
 
   return (
     <div className="main-container">
-
-      <span>MAIN</span>
 
         {page}
 

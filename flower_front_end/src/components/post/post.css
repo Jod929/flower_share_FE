@@ -1,3 +1,19 @@
-.card {
-  width: 18rem;
+
+
+@media screen and (min-width: 1000px) {
+  .post-card-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    margin: 5%;
+  }
+  .card {
+    width: 50%;
+  }
+}
+
+.post-card-holder {
+  width: 100%;
+  margin: 5%;
 }

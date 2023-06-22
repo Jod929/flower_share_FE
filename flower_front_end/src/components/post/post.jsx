@@ -4,7 +4,7 @@ import './post.css'
 const Post = ({ image, desc }) => {
 
   return (
-    <div>
+    <div className="post-card-holder">
         <div class="card" >
           <img src={require('../../sample_data/images/flower_1.jpeg')} class="card-img-top" alt="flower" />
           <div class="card-body">
