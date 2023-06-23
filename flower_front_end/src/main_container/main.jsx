@@ -9,8 +9,6 @@ import AddPost from '../components/make_post/add_post/addPost.jsx'
 
 const Main = () => {
 
-  const [ page, changePage ] = useState(<General/>);
-
   const updatePage = (pageName) => {
 
     if (pageName === "friends") {
@@ -24,6 +22,8 @@ const Main = () => {
     }
 
   }
+
+  const [ page, changePage ] = useState(<General updatePage={updatePage}/>);
 
   return (
     <div className="main-container">

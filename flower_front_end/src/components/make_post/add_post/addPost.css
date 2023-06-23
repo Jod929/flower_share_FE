@@ -1,0 +1,31 @@
+.post-container {
+  margin-top: 50%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  height: 20rem;
+  width: 20rem;
+  background-color: rgb(104, 126, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.uploaded-image {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
