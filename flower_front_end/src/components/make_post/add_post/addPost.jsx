@@ -47,11 +47,16 @@ const AddPost = () => {
           }
 
         </div>
-        <div class="mb-3" className="desc">
-          <label for="exampleInputPassword1" class="form-label">Description</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" />
+        <div class="mb-3" className="desc" >
+          {/* <label for="exampleInputPassword1" class="form-label">Description</label> */}
+          {/* <input type="text" class="form-control" id="exampleInputPassword1" className="image-text"/> */}
+          <textarea rows="5" cols="5" placeholder="say something about your flower!" className="image-text">
+
+          </textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Post</button>
+        <button type="submit" class="btn btn-primary" className="submit-butn">
+          <i class="fa-solid fa-arrow-up-from-bracket" ></i>
+        </button>
       </form>
     </div>
   )
