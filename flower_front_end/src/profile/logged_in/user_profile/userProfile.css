@@ -1,0 +1,25 @@
+.holder {
+  /* border: 1px solid black; */
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-pic {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  margin: 15%;
+}
+
+.data {
+  display: flex;
+  gap: 10px;
+  margin-right: 10%;
+  margin-top: 5%;
+}
+
+/* .username {
+  position: relative;
+  height: 2rem;
+} */
