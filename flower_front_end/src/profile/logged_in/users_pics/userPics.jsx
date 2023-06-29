@@ -1,9 +1,10 @@
-
+import Posts from '../../../components/posts/posts.jsx';
 
 const UserPics = () => {
   return (
     <div>
-      User Pics
+      <span>Your Pics</span>
+      <Posts />
     </div>
   )
 }

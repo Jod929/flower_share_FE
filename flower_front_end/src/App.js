@@ -3,7 +3,26 @@ import './App.css';
 
 import Main from './main_container/main.jsx';
 
+import { useEffect } from 'react';
+
+import axios from 'axios';
+
+
 function App() {
+
+  // const [ user, updateUser ] = useState();
+
+  useEffect(() => {
+
+    axios.get('http://localhost:8080/api/v1/person')
+    .then((data) => {
+      console.log(data);
+    })
+
+  }, [])
+
+
+
   return (
     <div className="App">
       {/* <header className="App-header">

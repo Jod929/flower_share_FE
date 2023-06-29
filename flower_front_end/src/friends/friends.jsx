@@ -4,7 +4,6 @@ import MakePost from '../components/make_post/makePost.jsx';
 const Friends = ({ updatePage }) => {
   return (
     <div>
-      <span>FRIENDS</span>
       <MakePost updatePage={updatePage}/>
       <Posts />
     </div>

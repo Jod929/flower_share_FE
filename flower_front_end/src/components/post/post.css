@@ -17,3 +17,18 @@
   width: 100%;
   margin: 5%;
 }
+
+.card-body {
+  display: flex;
+  justify-content: start;
+  gap: 2%;
+}
+
+.post-name {
+  font-weight: bold;
+}
+
+.time {
+  position: absolute;
+  top: 100%;
+}
